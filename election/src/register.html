@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>  
+ <head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <style>
+    .login-form {
+        width: 300px;
+        margin: 0 auto;
+        font-family: Tahoma, Geneva, sans-serif;
+    }
+    .login-form h1 {
+        text-align: center;
+        color: #4d4d4d;
+        font-size: 24px;
+        padding: 20px 0 20px 0;
+    }
+    .login-form input[type="password"],
+    .login-form input[type="text"] ,
+    .login-form input[type="date"],
+    .login-form input[type="number"]
+    {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #dddddd;
+        margin-bottom: 15px;
+        box-sizing:border-box;
+    }
+    .login-form input[type="submit"] {
+        width: 100%;
+        padding: 15px;
+        background-color: #535b63;
+        border: 0;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-weight: bold;
+        color: #ffffff;
+    }
+    </style>
+ </head> 
+ <body>
+    <div class="login-form">
+			<h1>Registration Form</h1>
+<form id="myform" action="connect.php" method="POST">  
+ Voter ID:<input type="text" name="voterid"placeholder="Voter ID" required>  
+ First Name:<input type="text" name="firstname"placeholder="First Name"required>
+Second Name: <input type="text" name="secondname"placeholder="Second Name">
+Last Name: <input type="text" name="lastname"placeholder="Last Name">
+DOB: <input type="date" name="dob"placeholder="DOB"required>
+Age:<input type="number"name="age"placeholder="Age"required>
+Address:<input type="text"name="address"placeholder="Address"required>
+   
+<input type="submit" value="Register"name="sub">  
+</div>
+
+</form>
+<span id="result"></span>
+</body>  
+</html> 

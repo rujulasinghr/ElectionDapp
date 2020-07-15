@@ -1,0 +1,15 @@
+Election.deployed().then(function(i) { app = i })
+web3.eth.accounts
+web3.eth.accounts[0]
+app.vote(1, { from: web3.eth.accounts[0] })
+
+
+app.candidates(1).then(function(c) { candidate = c; })
+candidate
+candidate[0]
+candidate[0].toNumber()
+
+
+mongodb: (go inside bin)
+mongod -dbpath data
+mongo
